@@ -16,19 +16,25 @@ public class Main {
     }
 
     public static double calculator(int a, int b, String operator) {
-        if (operator == "+") {
+        System.out.println("+".charAt(0));
+        System.out.println(operator.charAt(0));
+
+        if ("+".equals(operator)) {
+            System.out.println("You are adding");
             return a + b;
         }
-        if (operator == "-") {
+        if ("-".equals(operator)) {
+            System.out.println("You are subtracting");
             return a - b;
         }
 
-        if (operator == "*") {
+        if ("*".equals(operator)) {
+            System.out.println("You are multiplying");
             return a * b;
         }
-        if (operator == "/") {
+        if ("/".equals(operator)) {
+            System.out.println("You are dividing");
             return a / b;
-
         }
         if (operator == "%") {
             return a % b;
