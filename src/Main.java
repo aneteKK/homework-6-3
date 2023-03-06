@@ -7,29 +7,32 @@ public class Main {
         int product;
         int difference;
 
-        System.out.println(calculator(1,2, "-"));
-        System.out.println(calculator(1,5, "+"));
-        System.out.println(calculator(6,2, "*"));
-        System.out.println(calculator(1,8, "/"));
+        System.out.println(calculator(1, 2, "-"));
+        System.out.println(calculator(1, 5, "+"));
+        System.out.println(calculator(6, 2, "*"));
+        System.out.println(calculator(1, 8, "/"));
+        System.out.println(calculator(7, 3, "%"));
 
     }
-    public static double calculator(int a,int b, String operator){
-        if(operator =="+"){
-            return a+b;
+
+    public static double calculator(int a, int b, String operator) {
+        if (operator == "+") {
+            return a + b;
         }
-        if(operator=="-"){
-            return a-b;
+        if (operator == "-") {
+            return a - b;
         }
 
         if (operator == "*") {
-            return a*b;
+            return a * b;
         }
-        if(operator=="/"){
-            return a/b;
+        if (operator == "/") {
+            return a / b;
 
         }
-
+        if (operator == "%") {
+            return a % b;
+        }
         return 0;
     }
-
 }
